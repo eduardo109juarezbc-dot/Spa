@@ -1,0 +1,450 @@
+/* ============================================
+   THE LOFT & SPA PLY — Custom Styles
+   Paleta: Negro profundo + Dorado + Grises cálidos
+   Fuentes: Cormorant Garamond (títulos) + DM Sans (texto)
+   ============================================ */
+
+/* ---------- CSS Custom Properties ---------- */
+:root {
+  --gold: #C9A84C;
+  --gold-light: #E2C97E;
+  --gold-dark: #A68A3E;
+  --dark: #0A0A0A;
+  --dark-card: #141414;
+  --dark-surface: #1A1A1A;
+  --dark-border: #2A2A2A;
+  --gray-warm: #A09890;
+  --gray-light: #D4CFC9;
+  --white-soft: #F5F0EB;
+}
+
+/* ---------- Base ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--dark);
+  color: var(--gray-light);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--dark);
+}
+
+/* ---------- Typography ---------- */
+.font-heading {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* ---------- Gold gradient text ---------- */
+.text-gradient-gold {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ---------- Gold border glow ---------- */
+.border-gold-glow {
+  border: 1px solid rgba(201, 168, 76, 0.25);
+  box-shadow: 0 0 20px rgba(201, 168, 76, 0.05);
+}
+
+.border-gold-glow:hover {
+  border-color: rgba(201, 168, 76, 0.5);
+  box-shadow: 0 0 30px rgba(201, 168, 76, 0.1);
+}
+
+/* ---------- Cards ---------- */
+.card-premium {
+  background: var(--dark-card);
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  border-radius: 1rem;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card-premium:hover {
+  border-color: rgba(201, 168, 76, 0.4);
+  box-shadow: 0 8px 40px rgba(201, 168, 76, 0.08);
+  transform: translateY(-4px);
+}
+
+/* ---------- CTA Button ---------- */
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: var(--dark);
+  font-weight: 700;
+  padding: 0.85rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  box-shadow: 0 4px 24px rgba(201, 168, 76, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-outline-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--gold);
+  font-weight: 600;
+  padding: 0.85rem 2rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid var(--gold);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+}
+
+.btn-outline-gold:hover {
+  background: rgba(201, 168, 76, 0.1);
+  box-shadow: 0 4px 24px rgba(201, 168, 76, 0.15);
+  transform: translateY(-2px);
+}
+
+/* ---------- Hero overlay ---------- */
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 10, 10, 0.7) 0%,
+    rgba(10, 10, 10, 0.5) 40%,
+    rgba(10, 10, 10, 0.8) 100%
+  );
+}
+
+/* ---------- Navbar scroll effect ---------- */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(10, 10, 10, 0.95) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- Mobile menu ---------- */
+.mobile-menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 40;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-menu-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  max-width: 320px;
+  height: 100vh;
+  background: var(--dark-surface);
+  z-index: 50;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border-left: 1px solid rgba(201, 168, 76, 0.2);
+  overflow-y: auto;
+}
+
+.mobile-drawer.active {
+  transform: translateX(0);
+}
+
+/* ---------- WhatsApp FAB ---------- */
+.fab-whatsapp {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  z-index: 999;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.fab-whatsapp:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
+}
+
+.fab-whatsapp svg {
+  width: 32px;
+  height: 32px;
+  fill: white;
+}
+
+/* Ring animation for mobile */
+.fab-whatsapp::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #25D366;
+  animation: fabRing 2s ease-out infinite;
+}
+
+@keyframes fabRing {
+  0% { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+/* Desktop tooltip */
+.fab-whatsapp .fab-tooltip {
+  position: absolute;
+  right: 72px;
+  background: var(--dark-card);
+  color: var(--gray-light);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  border: 1px solid rgba(201, 168, 76, 0.15);
+}
+
+.fab-whatsapp:hover .fab-tooltip {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .fab-whatsapp .fab-tooltip {
+    display: none;
+  }
+}
+
+/* ---------- Scroll Reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ---------- FAQ Accordion ---------- */
+.faq-item {
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+  background: var(--dark-card);
+}
+
+.faq-item:hover {
+  border-color: rgba(201, 168, 76, 0.3);
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  background: none;
+  border: none;
+  color: var(--white-soft);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+  color: var(--gold);
+}
+
+.faq-question .faq-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  color: var(--gold);
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+}
+
+.faq-answer-inner {
+  padding: 0 1.5rem 1.25rem;
+  color: var(--gray-warm);
+  line-height: 1.7;
+}
+
+/* ---------- Price tag ---------- */
+.price-tag {
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.price-old {
+  color: var(--gray-warm);
+  text-decoration: line-through;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+}
+
+/* ---------- Section Divider ---------- */
+.section-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+  margin: 1rem auto;
+}
+
+/* ---------- Image placeholders ---------- */
+.img-placeholder {
+  background: var(--dark-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-warm);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: 1px dashed rgba(201, 168, 76, 0.2);
+}
+
+/* ---------- Category card image overlay ---------- */
+.cat-card-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.cat-card-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10, 10, 10, 0.8) 0%, transparent 60%);
+}
+
+.cat-card-img img {
+  transition: transform 0.5s ease;
+}
+
+.cat-card-img:hover img {
+  transform: scale(1.05);
+}
+
+/* ---------- Promo filter ---------- */
+.promo-filter-btn {
+  padding: 0.5rem 1.25rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  background: transparent;
+  color: var(--gray-warm);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.promo-filter-btn:hover,
+.promo-filter-btn.active {
+  background: rgba(201, 168, 76, 0.15);
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+/* ---------- Misc ---------- */
+.bg-dark-gradient {
+  background: linear-gradient(180deg, var(--dark) 0%, var(--dark-surface) 100%);
+}
+
+.text-gold { color: var(--gold); }
+.text-gold-light { color: var(--gold-light); }
+.bg-dark-card { background: var(--dark-card); }
+.bg-dark-surface { background: var(--dark-surface); }
+
+/* Smooth image loading */
+img {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(201, 168, 76, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(201, 168, 76, 0.5);
+}

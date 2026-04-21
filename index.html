@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE LOFT &amp; SPA PLY | Barbería, Spa y Belleza en Emiliano Zapata, Morelos</title>
+  <meta name="description"
+    content="THE LOFT & SPA PLY: barbería, spa, uñas, faciales, depilación y más en Emiliano Zapata, Morelos. Todo lo que necesitas, en un solo lugar. Agenda por WhatsApp.">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/tailwind.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="font-body">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar" class="navbar fixed top-0 w-full z-30 bg-transparent">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+      <a href="#" class="flex items-center">
+        <img src="assets/img/Logo.jpeg" alt="" class="h-12 w-auto rounded">
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-warm-light">
+        <a href="#inicio" class="hover:text-gold transition">Inicio</a>
+        <a href="#servicios" class="hover:text-gold transition">Servicios</a>
+        <a href="#promociones" class="hover:text-gold transition">Promociones</a>
+        <a href="#contacto" class="hover:text-gold transition">Contacto</a>
+        <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Informaci%C3%B3n%20general.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F"
+          target="_blank" class="btn-gold text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg> Agendar Cita</a>
+      </div>
+      <button id="menu-toggle" class="md:hidden text-warm-white" aria-expanded="false" aria-label="Abrir menú">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay + drawer -->
+  <div id="mobile-overlay" class="mobile-menu-overlay"></div>
+  <div id="mobile-drawer" class="mobile-drawer">
+    <div class="flex items-center justify-between p-5 border-b border-dark-border">
+      <span class="font-heading text-lg font-bold text-warm-white">Menú</span>
+      <button id="menu-close" class="text-warm-light hover:text-gold" aria-label="Cerrar menú"><svg class="w-6 h-6"
+          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg></button>
+    </div>
+    <div class="flex flex-col p-5 gap-4">
+      <a href="#inicio" class="mobile-nav-link text-warm-light hover:text-gold text-lg transition">Inicio</a>
+      <a href="#servicios" class="mobile-nav-link text-warm-light hover:text-gold text-lg transition">Servicios</a>
+      <a href="#promociones" class="mobile-nav-link text-warm-light hover:text-gold text-lg transition">Promociones</a>
+      <a href="#contacto" class="mobile-nav-link text-warm-light hover:text-gold text-lg transition">Contacto</a>
+      <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Informaci%C3%B3n%20general.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F"
+        target="_blank" class="btn-gold text-center mt-4"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg> Agendar</a>
+    </div>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section id="inicio" class="relative min-h-screen flex items-center justify-center">
+    <canvas id="hero-canvas" class="absolute inset-0 w-full h-full" aria-hidden="true"></canvas>
+    <div class="absolute inset-0" style="background:linear-gradient(to top, #0A0A0A 0%, rgba(10,10,10,0.55) 50%, rgba(10,10,10,0.2) 100%)"></div>
+    <div class="relative z-10 text-center px-4 max-w-3xl mx-auto">
+      <h1 class="font-heading text-5xl md:text-7xl font-bold text-warm-white mb-4 leading-tight">Todo lo que necesitas,
+        <span class="text-gradient-gold">en un solo lugar</span>
+      </h1>
+      <p class="text-warm-gray text-lg md:text-xl mb-8">Barbería, spa, uñas, faciales y más — Emiliano Zapata, Mor.</p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Informaci%C3%B3n%20general.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F"
+          target="_blank" class="btn-gold text-base"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg> Agendar por WhatsApp</a>
+        <a href="#servicios" class="btn-outline-gold text-base">Ver servicios</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS RESUMEN ===== -->
+  <section id="servicios" class="py-20 px-4 bg-dark">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold text-warm-white mb-2 reveal">Nuestros <span
+          class="text-gradient-gold">Servicios</span></h2>
+      <div class="section-divider reveal"></div>
+      <p class="text-warm-gray mb-12 reveal">Descubre todo lo que tenemos para ti</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <a href="#barberia" class="card-premium p-0 overflow-hidden group reveal">
+          <div class="cat-card-img h-48"><!-- PLACEHOLDER: cat-barberia.webp --><img src="assets/img/trabajo-barberia-panoramica.jpeg"
+              alt="Barbería" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-xl font-bold text-warm-white group-hover:text-gold transition">Barbería</h3>
+            <p class="text-warm-gray text-sm mt-1">Cortes, afeitado y perfilado</p>
+          </div>
+        </a>
+        <a href="#unas" class="card-premium p-0 overflow-hidden group reveal">
+          <div class="cat-card-img h-48"><!-- PLACEHOLDER: cat-unas.webp --><img src="assets/img/trabajo-unas-gold.jpeg"
+              alt="Uñas" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-xl font-bold text-warm-white group-hover:text-gold transition">Uñas</h3>
+            <p class="text-warm-gray text-sm mt-1">Manicura, pedicura y gel</p>
+          </div>
+        </a>
+        <a href="#faciales" class="card-premium p-0 overflow-hidden group reveal">
+          <div class="cat-card-img h-48"><!-- PLACEHOLDER: cat-faciales.webp --><img src="assets/img/promo-faciales-abril.jpeg"
+              alt="Faciales" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-xl font-bold text-warm-white group-hover:text-gold transition">Faciales</h3>
+            <p class="text-warm-gray text-sm mt-1">Limpieza profunda y glow</p>
+          </div>
+        </a>
+        <a href="#depilacion" class="card-premium p-0 overflow-hidden group reveal">
+          <div class="cat-card-img h-48"><!-- PLACEHOLDER: cat-depilacion.webp --><img
+              src="assets/img/DepilacionConCera.png" alt="Depilación con Cera" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-xl font-bold text-warm-white group-hover:text-gold transition">Depilación con
+              Cera</h3>
+            <p class="text-warm-gray text-sm mt-1">Paquetes hombre y mujer</p>
+          </div>
+        </a>
+        <a href="#armonizacion" class="card-premium p-0 overflow-hidden group reveal">
+          <div class="cat-card-img h-48"><!-- PLACEHOLDER: cat-armonizacion.webp --><img
+              src="assets/img/promo-toxina-botulinica-abril.jpeg" alt="Armonización Facial" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-xl font-bold text-warm-white group-hover:text-gold transition">Armonización
+              Facial</h3>
+            <p class="text-warm-gray text-sm mt-1">Botox, rellenos y más</p>
+          </div>
+        </a>
+        <a href="#lashista" class="card-premium p-0 overflow-hidden group reveal">
+          <div class="cat-card-img h-48"><!-- PLACEHOLDER: cat-lashista.webp --><img src="assets/img/trabajo-lashista-aplicacion.jpeg"
+              alt="Lashista & Cejas" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-xl font-bold text-warm-white group-hover:text-gold transition">Lashista & Cejas
+            </h3>
+            <p class="text-warm-gray text-sm mt-1">Extensiones y lifting</p>
+          </div>
+        </a>
+        <a href="#keratina" class="card-premium p-0 overflow-hidden group reveal">
+          <div class="cat-card-img h-48"><!-- PLACEHOLDER: cat-keratina.webp --><img src="assets/img/trabajo-unas-artistico.jpeg"
+              alt="Alaciados / Keratina" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-xl font-bold text-warm-white group-hover:text-gold transition">Alaciados /
+              Keratina</h3>
+            <p class="text-warm-gray text-sm mt-1">Liso, brillo y sin frizz</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BARBERÍA ===== -->
+  <section id="barberia" class="py-20 px-4 bg-dark-surface">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+        <div class="w-full lg:w-1/2 reveal lg:order-1">
+          <div class="relative aspect-[4/5] sm:aspect-square lg:aspect-[4/5] rounded-xl overflow-hidden group border border-gold/10 shadow-2xl">
+            <!-- PLACEHOLDER: trabajo-barberia-corte-2.jpeg -->
+            <img src="assets/img/trabajo-barberia-corte-2.jpeg" alt="Barbería" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-in-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-60"></div>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 reveal lg:order-2">
+          <h2 class="font-heading text-3xl md:text-5xl font-bold text-warm-white mb-4">Barbería</span></h2>
+          <div class="w-16 h-1 bg-gold mb-8"></div>
+          <p class="text-warm-gray text-lg mb-8 leading-relaxed">Nuestro equipo de barberos profesionales ofrece cortes de precisión, afeitados clásicos con navaja, perfilado de cejas y barba. Utilizamos productos premium para garantizar un acabado impecable.</p>
+          
+          <div class="space-y-3 mb-10">
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Corte caballero</p>
+                
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">$160</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Corte%20caballero%20%24160.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Corte caballero" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Corte para dama</p>
+                
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">$160</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Corte%20para%20dama%20%24160.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Corte para dama" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Afeitado</p>
+                
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">$110</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Afeitado%20%24110.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Afeitado" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Perfilamiento de ceja</p>
+                
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">$60</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Perfilamiento%20de%20ceja%20%2460.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Perfilamiento de ceja" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Perfilado de barba / Tinte / Mascarilla</p>
+                <p class="text-warm-gray text-xs mt-0.5">Precio sujeto a valoración</p>
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">Consultar</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Perfilado%20de%20barba%20%2F%20Tinte%20%2F%20Mascarilla.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Perfilado de barba / Tinte / Mascarilla" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div></div>
+          <div class="bg-dark/50 rounded-xl p-6 border border-dark-border">
+            <h3 class="font-heading text-xl font-bold text-gold mb-4">Lo que debes saber</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Atención para hombres y mujeres</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Productos de calidad profesional</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Ambiente relajado y exclusivo</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Atendemos con o sin cita previa</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ===== UÑAS ===== -->
+  <section id="unas" class="py-20 px-4 bg-dark">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+        <div class="w-full lg:w-1/2 reveal lg:order-2">
+          <div class="relative aspect-[4/5] sm:aspect-square lg:aspect-[4/5] rounded-xl overflow-hidden group border border-gold/10 shadow-2xl">
+            <!-- PLACEHOLDER: trabajo-unas-gold.jpeg -->
+            <img src="assets/img/trabajo-unas-gold.jpeg" alt="Uñas" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-in-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-60"></div>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 reveal lg:order-1">
+          <h2 class="font-heading text-3xl md:text-5xl font-bold text-warm-white mb-4">Uñas</span></h2>
+          <div class="w-16 h-1 bg-gold mb-8"></div>
+          <p class="text-warm-gray text-lg mb-8 leading-relaxed">Consiente tus manos y pies con nuestros servicios profesionales. Utilizamos productos de alta calidad que garantizan duración y un acabado impecable en todos nuestros tratamientos.</p>
+          
+          <div class="space-y-3 mb-10">
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Manicura y Pedicura</p>
+                
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-old text-xs mr-2">$350</span><span class="price-tag">$250</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Manicura%20y%20Pedicura%20%24250.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Manicura y Pedicura" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Gel semipermanente manos y pies</p>
+                
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">$150</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Gel%20semipermanente%20manos%20y%20pies%20%24150.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Gel semipermanente manos y pies" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Uñas acrílicas / Diseños especiales</p>
+                <p class="text-warm-gray text-xs mt-0.5">Consulta por WhatsApp</p>
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">Consultar</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20U%C3%B1as%20acr%C3%ADlicas%20%2F%20Dise%C3%B1os%20especiales.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Uñas acrílicas / Diseños especiales" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div></div>
+          <div class="bg-dark/50 rounded-xl p-6 border border-dark-border">
+            <h3 class="font-heading text-xl font-bold text-gold mb-4">Lo que debes saber</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Gel semipermanente con duración ideal de 2 a 3 semanas</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Herramientas 100% esterilizadas para tu seguridad</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Diseños personalizados disponibles bajo cotización</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>El servicio base incluye limpieza, corte e hidratación</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ===== FACIALES ===== -->
+  <section id="faciales" class="py-20 px-4 bg-dark-surface">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+        <div class="w-full lg:w-1/2 reveal lg:order-1">
+          <div class="relative aspect-[4/5] sm:aspect-square lg:aspect-[4/5] rounded-xl overflow-hidden group border border-gold/10 shadow-2xl">
+            <!-- PLACEHOLDER: promo-faciales-abril.jpeg -->
+            <img src="assets/img/promo-faciales-abril.jpeg" alt="Faciales" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-in-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-60"></div>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 reveal lg:order-2">
+          <h2 class="font-heading text-3xl md:text-5xl font-bold text-warm-white mb-4">Faciales</span></h2>
+          <div class="w-16 h-1 bg-gold mb-8"></div>
+          <p class="text-warm-gray text-lg mb-8 leading-relaxed">Nuestro Facial Glow Essential es un tratamiento completo diseñado para transformar tu piel, dejándola luminosa, hidratada y libre de impurezas. Se adapta perfectamente a todo tipo de piel.</p>
+          
+          <div class="space-y-3 mb-10">
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Facial Glow Essential</p>
+                <p class="text-warm-gray text-xs mt-0.5">Limpieza profunda + espátula ultrasónica + alta frecuencia + mascarilla + LED + hidratación + protector solar</p>
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">$350</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Facial%20Glow%20Essential%20%24350.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Facial Glow Essential" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div></div>
+          <div class="bg-dark/50 rounded-xl p-6 border border-dark-border">
+            <h3 class="font-heading text-xl font-bold text-gold mb-4">Lo que debes saber</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Remoción de impurezas con espátula ultrasónica (no invasivo)</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Alta frecuencia para desinfectar y regenerar</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Mascarilla personalizada y seleccionada según tu tipo de piel</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Duración aproximada de la sesión: 60 a 90 minutos</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ===== DEPILACIÓN ===== -->
+  <!-- ===== DEPILACIÓN CON CERA ===== -->
+  <section id="depilacion" class="py-20 px-4 bg-dark">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+        <div class="w-full lg:w-1/2 reveal lg:order-2">
+          <div class="relative aspect-[4/5] sm:aspect-square lg:aspect-[4/5] rounded-xl overflow-hidden group border border-gold/10 shadow-2xl">
+            <!-- PLACEHOLDER: DepilacionConCera.png -->
+            <img src="assets/img/DepilacionConCera.png" alt="Depilación con Cera" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-in-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-60"></div>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 reveal lg:order-1">
+          <h2 class="font-heading text-3xl md:text-5xl font-bold text-warm-white mb-4">Depilación con Cera</span></h2>
+          <div class="w-16 h-1 bg-gold mb-8"></div>
+          <p class="text-warm-gray text-lg mb-8 leading-relaxed">Ofrecemos de depilación con cera profesional de baja temperatura para hombres y mujeres. Minimizamos la irritación dejando tu piel suave por más tiempo.</p>
+          
+          <div class="space-y-3 mb-10"><h3 class="font-heading text-xl font-bold text-warm-white flex items-center gap-2 mt-6 mb-3"><!-- @license lucide-static v0.576.0 - ISC --><svg class="text-gold inline-icon" style="display:inline-block;vertical-align:middle"class="lucide lucide-user"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg> Paquetes Hombre</h3>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Men Grooming Basic</p>
+                <p class="text-warm-gray text-xs mt-0.5">Axilas + Pecho o Espalda</p>
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">$850</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Men%20Grooming%20Basic%20%24850.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Men Grooming Basic" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Men Grooming Plus</p>
+                <p class="text-warm-gray text-xs mt-0.5">Axilas + Pecho + Abdomen</p>
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">$950</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Men%20Grooming%20Plus%20%24950.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Men Grooming Plus" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Intimate Men Luxe</p>
+                <p class="text-warm-gray text-xs mt-0.5">Zona íntima completa</p>
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">$980</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Intimate%20Men%20Luxe%20%24980.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Intimate Men Luxe" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Men Full Body</p>
+                <p class="text-warm-gray text-xs mt-0.5">Espalda + Pecho + Piernas</p>
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">$1,200</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Men%20Full%20Body%20%241%2C200.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Men Full Body" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div><h3 class="font-heading text-xl font-bold text-warm-white flex items-center gap-2 mt-6 mb-3"><!-- @license lucide-static v0.576.0 - ISC --><svg class="text-gold inline-icon" style="display:inline-block;vertical-align:middle"class="lucide lucide-user-round"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="8" r="5" /><path d="M20 21a8 8 0 0 0-16 0" /></svg> Paquetes Mujer</h3>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Silk Skin Basic</p>
+                <p class="text-warm-gray text-xs mt-0.5">Axilas + Bikini Clásico</p>
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">$500</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Silk%20Skin%20Basic%20%24500.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Silk Skin Basic" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Silk Skin Plus</p>
+                <p class="text-warm-gray text-xs mt-0.5">Axilas + Bikini Brasileño + Medias Piernas</p>
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">$850</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Silk%20Skin%20Plus%20%24850.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Silk Skin Plus" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Intimate Woman Premium</p>
+                <p class="text-warm-gray text-xs mt-0.5">Bikini Brasileño + Interglútea</p>
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">$750</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Intimate%20Woman%20Premium%20%24750.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Intimate Woman Premium" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Silk Skin Full Body</p>
+                <p class="text-warm-gray text-xs mt-0.5">Axilas + Bikini Completo + Piernas + Brazos</p>
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">$1,100</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Silk%20Skin%20Full%20Body%20%241%2C100.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Silk Skin Full Body" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div></div>
+          <div class="bg-dark/50 rounded-xl p-6 border border-dark-border">
+            <h3 class="font-heading text-xl font-bold text-gold mb-4">Lo que debes saber</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Entorno seguro, privado y 100% higiénico</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Cera de baja temperatura ideal para pieles sensibles</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Resultados más duraderos que el rasurado tradicional</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>El dolor disminuye significativamente con sesiones regulares</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ===== ARMONIZACIÓN ===== -->
+  <!-- ===== ARMONIZACIÓN FACIAL ===== -->
+  <section id="armonizacion" class="py-20 px-4 bg-dark-surface">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+        <div class="w-full lg:w-1/2 reveal lg:order-1">
+          <div class="relative aspect-[4/5] sm:aspect-square lg:aspect-[4/5] rounded-xl overflow-hidden group border border-gold/10 shadow-2xl">
+            <!-- PLACEHOLDER: promo-toxina-botulinica-abril.jpeg -->
+            <img src="assets/img/promo-toxina-botulinica-abril.jpeg" alt="Armonización Facial" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-in-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-60"></div>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 reveal lg:order-2">
+          <h2 class="font-heading text-3xl md:text-5xl font-bold text-warm-white mb-4">Armonización Facial</span></h2>
+          <div class="w-16 h-1 bg-gold mb-8"></div>
+          <p class="text-warm-gray text-lg mb-8 leading-relaxed">Realza tu belleza natural. Contamos con médicos especialistas que utilizan técnicas avanzadas y productos aprobados de la más alta calidad.</p>
+          
+          <div class="card-premium p-6 mb-8 text-center border-gold border-opacity-40 bg-gold/5">
+            <p class="text-gold text-sm uppercase tracking-wider font-bold mb-2 flex items-center justify-center gap-2"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon" style="display:inline-block;vertical-align:middle"class="lucide lucide-sparkles"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /><path d="M20 2v4" /><path d="M22 4h-4" /><circle cx="4" cy="20" r="2" /></svg> Promoción Especial</p>
+            <p class="font-heading text-4xl font-bold"><span class="price-old text-2xl">$5,000</span> <span class="text-white">$2,000</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Armonizaci%C3%B3n%20Facial%20promo%20%242%2C000.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="btn-gold mt-4 text-sm w-full justification-center">Agendar Valoración</a>
+          </div>
+          <div class="flex items-start gap-3 bg-dark-card border border-gold/20 rounded-lg p-4 mb-8">
+            <!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-alert-triangle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" /><path d="M12 9v4" /><path d="M12 17h.01" /></svg>
+            <span class="text-warm-light text-sm leading-relaxed">Requiere valoración médica previa y presencial obligatoria para elaborar tu plan de tratamiento personalizado.</span>
+          </div>
+          <div class="space-y-3 mb-10">
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Botox / Hilos tensores / Rinomodelación</p>
+                <p class="text-warm-gray text-xs mt-0.5">Precio sujeto a valoración</p>
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">Consultar</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Botox%20%2F%20Hilos%20%2F%20Rinomodelaci%C3%B3n.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Botox / Hilos tensores / Rinomodelación" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Relleno de labios / Bichectomía</p>
+                <p class="text-warm-gray text-xs mt-0.5">Precio sujeto a valoración</p>
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">Consultar</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Relleno%20de%20labios%20%2F%20Bichectom%C3%ADa.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Relleno de labios / Bichectomía" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div></div>
+          <div class="bg-dark/50 rounded-xl p-6 border border-dark-border">
+            <h3 class="font-heading text-xl font-bold text-gold mb-4">Lo que debes saber</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Procedimientos realizados exclusivamente por profesionales certificados</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Se requiere valoración médica previa y personalizada</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Resultados naturales que realzan tus facciones</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Tiempo de recuperación mínimo para la mayoría de los tratamientos</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ===== LASHISTA ===== -->
+  <!-- ===== LASHISTA & CEJAS ===== -->
+  <section id="lashista" class="py-20 px-4 bg-dark">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+        <div class="w-full lg:w-1/2 reveal lg:order-2">
+          <div class="relative aspect-[4/5] sm:aspect-square lg:aspect-[4/5] rounded-xl overflow-hidden group border border-gold/10 shadow-2xl">
+            <!-- PLACEHOLDER: trabajo-lashista-extension.jpeg -->
+            <img src="assets/img/trabajo-lashista-extension.jpeg" alt="Lashista & Cejas" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-in-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-60"></div>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 reveal lg:order-1">
+          <h2 class="font-heading text-3xl md:text-5xl font-bold text-warm-white mb-4">Lashista & Cejas</span></h2>
+          <div class="w-16 h-1 bg-gold mb-8"></div>
+          <p class="text-warm-gray text-lg mb-8 leading-relaxed">Dale vida a tu mirada con nuestras extensiones profesionales y diseño de cejas. Desde un look natural hasta el volumen más dramático, siempre cuidando la salud de tu pestaña natural.</p>
+          
+          <div class="space-y-3 mb-10">
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Extensiones de pestañas (cualquier técnica)</p>
+                <p class="text-warm-gray text-xs mt-0.5">Clásica 1x1, Hawaianas, Mega Volumen, 3D</p>
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">$300</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Extensiones%20de%20pesta%C3%B1as%20%24300.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Extensiones de pestañas (cualquier técnica)" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Lash Lifting</p>
+                
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">$200</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Lash%20Lifting%20%24200.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Lash Lifting" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Diseño de cejas / Rizado</p>
+                <p class="text-warm-gray text-xs mt-0.5">Consulta por WhatsApp</p>
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-tag">Consultar</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Dise%C3%B1o%20de%20cejas%20%2F%20Rizado.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Diseño de cejas / Rizado" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div></div>
+          <div class="bg-dark/50 rounded-xl p-6 border border-dark-border">
+            <h3 class="font-heading text-xl font-bold text-gold mb-4">Lo que debes saber</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Múltiples técnicas (Clásica a Mega Volumen) por un precio único</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Materiales ligeros que no dañan tu pestaña natural</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Lash Lifting para una curvatura perfecta y natural</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Duración de extensiones de 2 a 4 semanas según cuidados</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ===== ALACIADOS Y KERATINA ===== -->
+  <section id="keratina" class="py-20 px-4 bg-dark-surface">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+        <div class="w-full lg:w-1/2 reveal lg:order-1">
+          <div class="relative aspect-[4/5] sm:aspect-square lg:aspect-[4/5] rounded-xl overflow-hidden group border border-gold/10 shadow-2xl">
+            <!-- PLACEHOLDER: trabajo-unas-artistico.jpeg -->
+            <img src="assets/img/trabajo-unas-artistico.jpeg" alt="Alaciados y Keratina" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-in-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-60"></div>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 reveal lg:order-2">
+          <h2 class="font-heading text-3xl md:text-5xl font-bold text-warm-white mb-4">Alaciados y Keratina</span></h2>
+          <div class="w-16 h-1 bg-gold mb-8"></div>
+          <p class="text-warm-gray text-lg mb-8 leading-relaxed">Transforma tu cabello. Logra un liso perfecto, sedoso, sin frizz y con un brillo espectacular. La keratina nutre y fortalece la estructura capilar desde la primera aplicación.</p>
+          
+          <div class="space-y-3 mb-10">
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Cabello corto</p>
+                
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-old text-xs mr-2">$600</span><span class="price-tag">$400</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Alaciado%20Cabello%20corto%20%24400.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Cabello corto" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Arriba de hombros</p>
+                
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-old text-xs mr-2">$800</span><span class="price-tag">$600</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Alaciado%20Arriba%20de%20hombros%20%24600.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Arriba de hombros" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Bajo hombros</p>
+                
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-old text-xs mr-2">$1,000</span><span class="price-tag">$800</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Alaciado%20Bajo%20hombros%20%24800.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Bajo hombros" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Espalda media</p>
+                
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-old text-xs mr-2">$1,200</span><span class="price-tag">$1,000</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Alaciado%20Espalda%20media%20%241%2C000.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Espalda media" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bg-dark-card border border-dark-border hover:border-gold/30 transition-colors rounded-lg p-4 flex items-center justify-between group">
+              <div class="flex-1 pr-4">
+                <p class="text-warm-white font-medium text-sm md:text-base group-hover:text-gold transition-colors">Cabello largo</p>
+                
+              </div>
+              <div class="flex items-center gap-4 text-right shrink-0">
+                <div>
+                  <span class="price-old text-xs mr-2">$1,400</span><span class="price-tag">$1,200</span>
+                </div>
+                <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Alaciado%20Cabello%20largo%20%241%2C200.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all" aria-label="Agendar Cabello largo" title="Agendar por WhatsApp">
+                  <!-- @license lucide-static v0.576.0 - ISC --><svg class="w-4 h-4" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+                </a>
+              </div>
+            </div></div>
+          <div class="bg-dark/50 rounded-xl p-6 border border-dark-border">
+            <h3 class="font-heading text-xl font-bold text-gold mb-4">Lo que debes saber</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Resultados espectaculares visibles de inmediato</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Reduce significativamente el tiempo de peinado diario</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Duración aproximada de 3 a 5 meses con cuidados adecuados</span></li>
+              <li class="flex items-start gap-3 text-warm-gray text-sm"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold shrink-0 mt-0.5" style="display:inline-block;vertical-align:middle"class="lucide lucide-check-circle-2"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></svg> <span>Compatible con todo tipo de cabello (rizado, teñido, con frizz)</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ===== PROMOCIONES ===== -->
+  <section id="promociones" class="py-20 px-4 bg-dark">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold text-warm-white mb-2 reveal">Promociones <span
+          class="text-gradient-gold">Especiales</span></h2>
+      <div class="section-divider reveal"></div>
+      <p class="text-warm-gray mb-8 reveal">Aprovecha nuestros precios especiales</p>
+      <!-- Filtros -->
+      <div class="flex flex-wrap justify-center gap-2 mb-10 reveal">
+        <button class="promo-filter-btn active" data-filter="all">Todas</button>
+        <button class="promo-filter-btn" data-filter="barberia">Barbería</button>
+        <button class="promo-filter-btn" data-filter="unas">Uñas</button>
+        <button class="promo-filter-btn" data-filter="faciales">Faciales</button>
+        <button class="promo-filter-btn" data-filter="lashista">Lashista</button>
+        <button class="promo-filter-btn" data-filter="armonizacion">Armonización</button>
+        <button class="promo-filter-btn" data-filter="keratina">Keratina</button>
+        <button class="promo-filter-btn" data-filter="depilacion">Depilación</button>
+        <button class="promo-filter-btn" data-filter="masajes">Masajes</button>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="barberia">
+          <div class="h-44"><!-- PLACEHOLDER: promo-01.webp --><img src="assets/img/promo-barberia-abril.jpeg" alt="Corte Caballero"
+              class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Corte Caballero</h3>
+            <p class="mt-2"><span class="price-tag">$160</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Corte%20Caballero%20%24160.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F"
+              target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="faciales">
+          <div class="h-44"><!-- PLACEHOLDER: promo-02.webp --><img src="assets/img/promo-faciales-abril.jpeg"
+              alt="Facial Glow Essential" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Facial Glow Essential</h3>
+            <p class="mt-2"><span class="price-tag">$350</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Facial%20Glow%20Essential%20%24350.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F"
+              target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="unas">
+          <div class="h-44"><!-- PLACEHOLDER: promo-03.webp --><img src="assets/img/promo-maniarte-spa.jpeg"
+              alt="Manicura y Pedicura" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Manicura y Pedicura</h3>
+            <p class="mt-2"><span class="price-old">$350</span><span class="price-tag">$250</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Manicura%20y%20Pedicura%20%24250.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F"
+              target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="unas">
+          <div class="h-44"><!-- PLACEHOLDER: promo-04.webp --><img src="assets/img/promo-pedi-spa.jpeg"
+              alt="Gel Semipermanente" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Gel Semipermanente</h3>
+            <p class="text-warm-gray text-sm">Manos y pies</p>
+            <p class="mt-2"><span class="price-tag">$150</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Gel%20Semipermanente%20%24150.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F"
+              target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="lashista">
+          <div class="h-44"><!-- PLACEHOLDER: promo-05.webp --><img src="assets/img/promo-aplicacion-pestanas.jpeg"
+              alt="Extensiones de Pestañas" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Extensiones de Pestañas</h3>
+            <p class="text-warm-gray text-sm">Cualquier aplicación</p>
+            <p class="mt-2"><span class="price-tag">$300</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Extensiones%20de%20Pesta%C3%B1as%20%24300.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F"
+              target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="lashista">
+          <div class="h-44"><!-- PLACEHOLDER: promo-06.webp --><img src="assets/img/promo-lash-lifting-cejas.jpeg" alt="Lash Lifting"
+              class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Lash Lifting</h3>
+            <p class="mt-2"><span class="price-tag">$200</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Lash%20Lifting%20%24200.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F"
+              target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="armonizacion">
+          <div class="h-44"><!-- PLACEHOLDER: promo-07.webp --><img src="assets/img/promo-toxina-botulinica-primavera.jpeg"
+              alt="Armonización Facial" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Armonización Facial</h3>
+            <p class="mt-2"><span class="price-old">$5,000</span><span class="price-tag">$2,000</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Armonizaci%C3%B3n%20Facial%20%242%2C000.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F"
+              target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="keratina">
+          <div class="h-44"><!-- PLACEHOLDER: promo-08.webp --><img src="assets/img/promo-keratina-primavera.jpeg"
+              alt="Alaciado / Keratina" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Alaciado / Keratina</h3>
+            <p class="text-warm-gray text-sm">Cabello corto</p>
+            <p class="mt-2"><span class="price-old">$600</span><span class="price-tag">$400</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Alaciado%20%2F%20Keratina%20%24400.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F"
+              target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="faciales">
+          <div class="h-44"><img src="assets/img/promo-microneedling.jpeg" alt="Microneedling Skin Revive" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Microneedling Skin Revive</h3>
+            <p class="text-warm-gray text-sm">4 sesiones · Bio-renovación total</p>
+            <p class="mt-2"><span class="price-old">$3,400</span><span class="price-tag">$999</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Microneedling%20Skin%20Revive.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="masajes">
+          <div class="h-44"><img src="assets/img/promo-masajes-primavera.jpeg" alt="Masajes Glow de Primavera" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Masajes · Glow de Primavera</h3>
+            <p class="text-warm-gray text-sm">Con aromaterapia incluida</p>
+            <p class="mt-2"><span class="price-tag">Desde $180</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Masajes.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="faciales">
+          <div class="h-44"><img src="assets/img/promo-dermapen-salmon.jpeg" alt="Dermapen con PDRN de Salmón" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Dermapen + PDRN Salmón</h3>
+            <p class="text-warm-gray text-sm">Incluye limpieza profunda</p>
+            <p class="mt-2"><span class="price-old">$1,500</span><span class="price-tag">$999</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Dermapen%20con%20PDRN%20de%20Salm%C3%B3n%20%24999.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="keratina">
+          <div class="h-44"><img src="assets/img/promo-reestructuracion-capilar.jpeg" alt="Reestructuración Capilar" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Reestructuración Capilar</h3>
+            <p class="text-warm-gray text-sm">Paquete de 6 sesiones disponible</p>
+            <p class="mt-2"><span class="price-tag">Desde $350</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Reestructuraci%C3%B3n%20Capilar.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="barberia">
+          <div class="h-44"><img src="assets/img/promo-lunes-martes.jpeg" alt="Lunes y Martes de Consentirte" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Lunes y Martes de Consentirte</h3>
+            <p class="text-warm-gray text-sm">Especiales de vacaciones</p>
+            <p class="mt-2"><span class="price-tag">Desde $120</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Promos%20Lunes%20y%20Martes.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="armonizacion">
+          <div class="h-44"><img src="assets/img/promo-aumento-labios.jpeg" alt="Aumento de Labios con Ácido Hialurónico" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Aumento de Labios</h3>
+            <p class="text-warm-gray text-sm">Ácido Hialurónico · Resultado natural</p>
+            <p class="mt-2"><span class="price-tag">$5,000</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Aumento%20de%20Labios%20con%20%C3%81cido%20Hialur%C3%B3nico%20%245%2C000.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="armonizacion">
+          <div class="h-44"><img src="assets/img/promo-enzimas-lipolíticas.jpeg" alt="Tratamiento Reductivo con Enzimas Lipolíticas" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Enzimas Lipolíticas</h3>
+            <p class="text-warm-gray text-sm">10 sesiones · Tratamiento reductivo</p>
+            <p class="mt-2"><span class="price-tag">$6,500</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Enzimas%20Lipol%C3%ADticas%2010%20sesiones%20%246%2C500.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="armonizacion">
+          <div class="h-44"><img src="assets/img/promo-lipopapada.jpeg" alt="Lipopapada Sin Cirugía" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Lipopapada Sin Cirugía</h3>
+            <p class="text-warm-gray text-sm">10 sesiones de Lipoenzimas</p>
+            <p class="mt-2"><span class="price-tag">$5,000</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Lipopapada%20Sin%20Cirug%C3%ADa%2010%20sesiones%20%245%2C000.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="unas">
+          <div class="h-44"><img src="assets/img/promo-manicura-gel.jpeg" alt="Manicura Gel Semipermanente" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Manicura Gel</h3>
+            <p class="text-warm-gray text-sm">Nivelación · 1-2 tonos liso</p>
+            <p class="mt-2"><span class="price-tag">$180</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Manicura%20Gel%20Semipermanente%20%24180.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="armonizacion">
+          <div class="h-44"><img src="assets/img/promo-toxina-botulinica-abril.jpeg" alt="Bótox - Toxina Botulínica Promo Abril" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Toxina Botulínica (Bótox)</h3>
+            <p class="text-warm-gray text-sm">Facial de regalo · Limpieza profunda</p>
+            <p class="mt-2"><span class="price-old">$8,500</span><span class="price-tag">$4,500</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Toxina%20Botul%C3%ADnica%20%244%2C500.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="armonizacion">
+          <div class="h-44"><img src="assets/img/promo-enzimas-lipolíticas-abril.jpeg" alt="Enzimas Lipolíticas Premium Promo Abril" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Enzimas Lipolíticas Premium</h3>
+            <p class="text-warm-gray text-sm">10 sesiones · Ambiente premium</p>
+            <p class="mt-2"><span class="price-old">$12,000</span><span class="price-tag">$6,500</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Enzimas%20Lipol%C3%ADticas%20Premium%20%246%2C500.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="masajes">
+          <div class="h-44"><img src="assets/img/promo-masajes-abril.jpeg" alt="Masajes Promoción Abril" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Masajes · Promo Abril</h3>
+            <p class="text-warm-gray text-sm">Descontracturante, relajante, piedras</p>
+            <p class="mt-2"><span class="price-tag">Desde $180</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Masajes.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="barberia">
+          <div class="h-44"><img src="assets/img/promo-manispa-hombre.jpeg" alt="ManiSpa para Hombre" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">ManiSpa para Hombre</h3>
+            <p class="text-warm-gray text-sm">Exfoliación, masaje y cutículas</p>
+            <p class="mt-2"><span class="price-old">$200</span><span class="price-tag">$100</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20ManiSpa%20para%20Hombre%20%24100.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+        <div class="card-premium overflow-hidden reveal promo-card" data-category="depilacion">
+          <div class="h-44"><img src="assets/img/promo-depilacion-masculina.jpeg" alt="Depilación Masculina" class="w-full h-full object-cover"></div>
+          <div class="p-5">
+            <h3 class="font-heading text-lg font-bold text-warm-white">Depilación Masculina</h3>
+            <p class="text-warm-gray text-sm">Paquete Básico · Full · Área Pélvica</p>
+            <p class="mt-2"><span class="price-tag">Desde $450</span></p>
+            <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Depilaci%C3%B3n%20Masculina.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="btn-gold w-full mt-4 justify-center text-sm">Agendar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POR QUÉ ELEGIRNOS ===== -->
+  <section class="py-20 px-4 bg-dark-surface">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold text-warm-white mb-2 reveal">¿Por qué <span
+          class="text-gradient-gold">elegirnos</span>?</h2>
+      <div class="section-divider reveal"></div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div class="card-premium p-6 text-center reveal">
+          <div class="text-4xl mb-4 text-gold"><!-- @license lucide-static v0.576.0 - ISC --><svg class="section-icon" style="display:inline-block;vertical-align:middle"class="lucide lucide-sparkles"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /><path d="M20 2v4" /><path d="M22 4h-4" /><circle cx="4" cy="20" r="2" /></svg></div>
+          <h3 class="font-heading text-lg font-bold text-warm-white mb-2">Atención Profesional</h3>
+          <p class="text-warm-gray text-sm">Equipo capacitado con años de experiencia en cada especialidad.</p>
+        </div>
+        <div class="card-premium p-6 text-center reveal">
+          <div class="text-4xl mb-4 text-gold"><!-- @license lucide-static v0.576.0 - ISC --><svg class="section-icon" style="display:inline-block;vertical-align:middle"class="lucide lucide-gem"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M10.5 3 8 9l4 13 4-13-2.5-6" /><path d="M17 3a2 2 0 0 1 1.6.8l3 4a2 2 0 0 1 .013 2.382l-7.99 10.986a2 2 0 0 1-3.247 0l-7.99-10.986A2 2 0 0 1 2.4 7.8l2.998-3.997A2 2 0 0 1 7 3z" /><path d="M2 9h20" /></svg></div>
+          <h3 class="font-heading text-lg font-bold text-warm-white mb-2">Productos Premium</h3>
+          <p class="text-warm-gray text-sm">Trabajamos con las mejores marcas para garantizar resultados.</p>
+        </div>
+        <div class="card-premium p-6 text-center reveal">
+          <div class="text-4xl mb-4 text-gold"><!-- @license lucide-static v0.576.0 - ISC --><svg class="section-icon" style="display:inline-block;vertical-align:middle"class="lucide lucide-shield-check"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></div>
+          <h3 class="font-heading text-lg font-bold text-warm-white mb-2">Higiene y Seguridad</h3>
+          <p class="text-warm-gray text-sm">Protocolos estrictos de limpieza e instrumentos esterilizados.</p>
+        </div>
+        <div class="card-premium p-6 text-center reveal">
+          <div class="text-4xl mb-4 text-gold"><!-- @license lucide-static v0.576.0 - ISC --><svg class="section-icon" style="display:inline-block;vertical-align:middle"class="lucide lucide-award"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" /><circle cx="12" cy="8" r="6" /></svg></div>
+          <h3 class="font-heading text-lg font-bold text-warm-white mb-2">Resultados Visibles</h3>
+          <p class="text-warm-gray text-sm">Transformaciones reales con técnicas de vanguardia.</p>
+        </div>
+        <div class="card-premium p-6 text-center reveal">
+          <div class="text-4xl mb-4 text-gold"><!-- @license lucide-static v0.576.0 - ISC --><svg class="section-icon" style="display:inline-block;vertical-align:middle"class="lucide lucide-store"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5" /><path d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244" /><path d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05" /></svg></div>
+          <h3 class="font-heading text-lg font-bold text-warm-white mb-2">Todo en un Solo Lugar</h3>
+          <p class="text-warm-gray text-sm">Barbería, spa, uñas, faciales, depilación y estética en un solo espacio.</p>
+        </div>
+        <div class="card-premium p-6 text-center reveal">
+          <div class="text-4xl mb-4 text-gold"><!-- @license lucide-static v0.576.0 - ISC --><svg class="section-icon" style="display:inline-block;vertical-align:middle"class="lucide lucide-heart-pulse"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" /><path d="M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" /></svg></div>
+          <h3 class="font-heading text-lg font-bold text-warm-white mb-2">Experiencia Única</h3>
+          <p class="text-warm-gray text-sm">Un ambiente premium diseñado para que te relajes y disfrutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERÍA ===== -->
+  <section id="galeria" class="py-20 px-4 bg-dark">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold text-warm-white mb-2 reveal">Galería</h2>
+      <div class="section-divider reveal"></div>
+      <p class="text-warm-gray mb-12 reveal">Nuestros espacios y trabajos reales</p>
+      <!-- Masonry grid — CSS columns, sin límite de imágenes -->
+      <div class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 mt-2 [column-fill:balance]">
+        <div class="mb-4 break-inside-avoid rounded-lg overflow-hidden reveal group"><img src="assets/img/fachada-exterior.jpeg" alt="Fachada exterior" class="w-full object-cover group-hover:scale-105 transition duration-500"></div>
+        <div class="mb-4 break-inside-avoid rounded-lg overflow-hidden reveal group"><img src="assets/img/trabajo-barberia-panoramica.jpeg" alt="Barbería" class="w-full object-cover group-hover:scale-105 transition duration-500"></div>
+        <div class="mb-4 break-inside-avoid rounded-lg overflow-hidden reveal group"><img src="assets/img/trabajo-unas-gold.jpeg" alt="Uñas diseño gold" class="w-full object-cover group-hover:scale-105 transition duration-500"></div>
+        <div class="mb-4 break-inside-avoid rounded-lg overflow-hidden reveal group"><img src="assets/img/trabajo-lashista-extension.jpeg" alt="Extensión de pestañas" class="w-full object-cover group-hover:scale-105 transition duration-500"></div>
+        <div class="mb-4 break-inside-avoid rounded-lg overflow-hidden reveal group"><img src="assets/img/interior-sala-faciales.jpeg" alt="Sala de faciales" class="w-full object-cover group-hover:scale-105 transition duration-500"></div>
+        <div class="mb-4 break-inside-avoid rounded-lg overflow-hidden reveal group"><img src="assets/img/trabajo-barberia-corte-2.jpeg" alt="Corte en barbería" class="w-full object-cover group-hover:scale-105 transition duration-500"></div>
+        <div class="mb-4 break-inside-avoid rounded-lg overflow-hidden reveal group"><img src="assets/img/trabajo-unas-artistico.jpeg" alt="Diseño artístico de uñas" class="w-full object-cover group-hover:scale-105 transition duration-500"></div>
+        <div class="mb-4 break-inside-avoid rounded-lg overflow-hidden reveal group"><img src="assets/img/trabajo-lashista-aplicacion.jpeg" alt="Aplicación de pestañas" class="w-full object-cover group-hover:scale-105 transition duration-500"></div>
+        <div class="mb-4 break-inside-avoid rounded-lg overflow-hidden reveal group"><img src="assets/img/interior-barberia.jpeg" alt="Interior barbería" class="w-full object-cover group-hover:scale-105 transition duration-500"></div>
+        <div class="mb-4 break-inside-avoid rounded-lg overflow-hidden reveal group"><img src="assets/img/trabajo-unas-french.jpeg" alt="Uñas french" class="w-full object-cover group-hover:scale-105 transition duration-500"></div>
+        <div class="mb-4 break-inside-avoid rounded-lg overflow-hidden reveal group"><img src="assets/img/trabajo-barberia-corte.jpeg" alt="Barber en acción" class="w-full object-cover group-hover:scale-105 transition duration-500"></div>
+        <div class="mb-4 break-inside-avoid rounded-lg overflow-hidden reveal group"><img src="assets/img/trabajo-lashista-tratamiento.jpeg" alt="Tratamiento de pestañas" class="w-full object-cover group-hover:scale-105 transition duration-500"></div>
+        <div class="mb-4 break-inside-avoid rounded-lg overflow-hidden reveal group"><img src="assets/img/trabajo-unas-elegante.jpeg" alt="Uñas elegantes" class="w-full object-cover group-hover:scale-105 transition duration-500"></div>
+        <div class="mb-4 break-inside-avoid rounded-lg overflow-hidden reveal group"><img src="assets/img/trabajo-unas-french-2.jpeg" alt="Uñas french diseño" class="w-full object-cover group-hover:scale-105 transition duration-500"></div>
+        <div class="mb-4 break-inside-avoid rounded-lg overflow-hidden reveal group"><img src="assets/img/trabajo-barberia-rizado.jpeg" alt="Corte cabello rizado" class="w-full object-cover group-hover:scale-105 transition duration-500"></div>
+        <div class="mb-4 break-inside-avoid rounded-lg overflow-hidden reveal group"><img src="assets/img/interior-barberia-2.jpeg" alt="Barbería sala completa" class="w-full object-cover group-hover:scale-105 transition duration-500"></div>
+        <div class="mb-4 break-inside-avoid rounded-lg overflow-hidden reveal group"><img src="assets/img/interior-sala-lashista.jpeg" alt="Sala lashista" class="w-full object-cover group-hover:scale-105 transition duration-500"></div>
+        <div class="mb-4 break-inside-avoid rounded-lg overflow-hidden reveal group"><img src="assets/img/interior-sala-diplomas.jpeg" alt="Sala diplomas" class="w-full object-cover group-hover:scale-105 transition duration-500"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section id="contacto" class="py-20 px-4 bg-dark-surface">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold text-warm-white mb-2 reveal">Contáctanos</h2>
+      <div class="section-divider reveal"></div>
+      <p class="text-warm-gray mb-12 reveal">Estamos listos para atenderte</p>
+
+      <!-- Botones grandes -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-12 reveal">
+        <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Informaci%C3%B3n%20general.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F"
+          target="_blank" class="card-premium p-6 text-center hover:border-green-500/50 transition group">
+          <div class="text-4xl mb-3 text-green-500"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:middle"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></div>
+          <h3 class="font-heading text-lg font-bold text-warm-white group-hover:text-green-400 transition">WhatsApp</h3>
+          <p class="text-warm-gray text-sm mt-1">+52 777 159 4874</p>
+        </a>
+        <a href="tel:+527701413453" class="card-premium p-6 text-center hover:border-blue-500/50 transition group">
+          <div class="text-4xl mb-3 text-blue-400"><!-- @license lucide-static v0.576.0 - ISC --><svg class="section-icon" style="display:inline-block;vertical-align:middle"class="lucide lucide-phone"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg></div>
+          <h3 class="font-heading text-lg font-bold text-warm-white group-hover:text-blue-400 transition">Llamar</h3>
+          <p class="text-warm-gray text-sm mt-1">+52 770 141 3453</p>
+        </a>
+        <a href="https://www.instagram.com/the_loftspabarbernails?utm_source=qr&igsh=MTN4YXlkZjAwZml1cA%3D%3D" target="_blank"
+          class="card-premium p-6 text-center hover:border-pink-500/50 transition group">
+          <div class="text-4xl mb-3 text-pink-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:middle"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></div>
+          <h3 class="font-heading text-lg font-bold text-warm-white group-hover:text-pink-400 transition">Instagram</h3>
+          <p class="text-warm-gray text-sm mt-1">@theloftply</p>
+        </a>
+        <a href="https://www.facebook.com/share/1FQKgr4vpP/" target="_blank"
+          class="card-premium p-6 text-center hover:border-blue-600/50 transition group">
+          <div class="text-4xl mb-3 text-blue-500"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:middle"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></div>
+          <h3 class="font-heading text-lg font-bold text-warm-white group-hover:text-blue-400 transition">Facebook</h3>
+          <p class="text-warm-gray text-sm mt-1">The Loft & Spa Ply</p>
+        </a>
+        <a href="https://www.tiktok.com/@trolinomikekrac?_r=1&_t=ZS-95cvcil00uH" target="_blank"
+          class="card-premium p-6 text-center hover:border-white/30 transition group">
+          <div class="text-4xl mb-3 text-warm-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:middle"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.28 8.28 0 0 0 4.83 1.54V6.79a4.85 4.85 0 0 1-1.06-.1z"/></svg></div>
+          <h3 class="font-heading text-lg font-bold text-warm-white group-hover:text-gray-300 transition">TikTok</h3>
+          <p class="text-warm-gray text-sm mt-1">@trolinomikekrac</p>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left reveal">
+        <div class="card-premium p-8">
+          <h3 class="font-heading text-xl font-bold text-gold mb-4"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold" style="display:inline-block;vertical-align:middle"class="lucide lucide-map-pin"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg> Dirección</h3>
+          <p class="text-warm-light mb-4">Av. Paseos del Rio, Paseos del Rio,<br>Benito Juárez, 62766<br>Emiliano Zapata, Mor., México</p>
+          <a href="https://maps.google.com/?q=Av+RioTiber+N51-A+Paseos+del+Rio+Guadalupe+de+las+Arenas+62766+Temixco+Morelos" target="_blank"
+            class="text-gold hover:text-gold-light transition text-sm inline-flex items-center gap-1">Ver en Google Maps
+            →</a>
+        </div>
+        <div class="card-premium p-8">
+          <h3 class="font-heading text-xl font-bold text-gold mb-4"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold" style="display:inline-block;vertical-align:middle"class="lucide lucide-phone"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg> Teléfonos</h3>
+          <ul class="space-y-3 text-warm-light text-sm">
+            <li><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold" style="display:inline-block;vertical-align:middle"class="lucide lucide-smartphone"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></svg> Contacto alterno: <a href="tel:+527771351896" class="hover:text-gold transition">+52 777 135 1896</a></li>
+          </ul>
+          <h3 class="font-heading text-xl font-bold text-gold mb-3 mt-6"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon text-gold" style="display:inline-block;vertical-align:middle"class="lucide lucide-clock"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg> Horarios</h3>
+          <p class="text-warm-light text-sm">Lunes a domingo &nbsp;·&nbsp; 10:00 am – 7:00 pm</p>
+        </div>
+      </div>
+
+      <div class="mt-10 reveal">
+        <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Informaci%C3%B3n%20general.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F"
+          target="_blank" class="btn-gold text-base"><!-- @license lucide-static v0.576.0 - ISC --><svg class="inline-icon" style="display:inline-block;vertical-align:middle"class="lucide lucide-message-circle"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg> Agendar por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-dark-card border-t border-dark-border py-12 px-4">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="font-heading text-lg font-bold text-gold mb-3">THE LOFT & SPA PLY</h4>
+        <p class="text-warm-gray text-sm">Todo lo que necesitas, en un solo lugar. Barbería, spa y belleza en Emiliano
+          Zapata, Morelos.</p>
+      </div>
+      <div>
+        <h4 class="font-heading text-lg font-bold text-gold mb-3">Links</h4>
+        <ul class="space-y-2 text-sm text-warm-gray">
+          <li><a href="#inicio" class="hover:text-gold transition">Inicio</a></li>
+          <li><a href="#servicios" class="hover:text-gold transition">Servicios</a></li>
+          <li><a href="#promociones" class="hover:text-gold transition">Promociones</a></li>
+          <li><a href="#contacto" class="hover:text-gold transition">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-heading text-lg font-bold text-gold mb-3">Ubicación</h4>
+        <p class="text-warm-gray text-sm mb-3">Av. Paseos del Rio, Paseos del Rio,<br>Benito Juárez, 62766<br>Emiliano Zapata, Mor., México</p>
+        <a href="https://maps.google.com/?q=Av+RioTiber+N51-A+Paseos+del+Rio+Guadalupe+de+las+Arenas+62766+Temixco+Morelos" target="_blank" class="text-gold hover:text-gold-light transition text-sm inline-flex items-center gap-1">Ver en Google Maps →</a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-8 pt-6 border-t border-dark-border text-center text-warm-gray text-xs">© 2026 THE
+      LOFT & SPA PLY. Todos los derechos reservados.</div>
+  </footer>
+
+  <!-- ===== FAB WHATSAPP ===== -->
+  <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20Informaci%C3%B3n%20general.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F"
+    target="_blank" class="fab-whatsapp" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+    <span class="fab-tooltip">¿Necesitas ayuda? Escríbenos</span>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
