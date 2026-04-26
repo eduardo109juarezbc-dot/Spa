@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  // Serve assets/img → /img/ and assets/fonts → /fonts/
+  base: '/Spa/',
   publicDir: 'assets',
 })
