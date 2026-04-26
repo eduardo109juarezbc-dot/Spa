@@ -6,6 +6,8 @@
 
 /* ---------- CSS Custom Properties ---------- */
 :root {
+  --logo-size: 74px;   /* ← cambia solo este valor para ajustar el logo */
+
   --gold: #C9A84C;
   --gold-light: #E2C97E;
   --gold-dark: #A68A3E;
@@ -16,6 +18,12 @@
   --gray-warm: #A09890;
   --gray-light: #D4CFC9;
   --white-soft: #F5F0EB;
+}
+
+/* ---------- Navbar logo ---------- */
+.navbar-logo {
+  height: var(--logo-size);
+  width: auto;
 }
 
 /* ---------- Base ---------- */

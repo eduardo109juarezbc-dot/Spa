@@ -40,6 +40,10 @@ const services = [
       'Productos de calidad profesional',
       'Ambiente relajado y exclusivo',
       'Atendemos con o sin cita previa'
+    ],
+    promos: [
+      { name: 'ManiSpa para Hombre', price: '$100', oldPrice: '$200', note: 'Exfoliación, masaje y cutículas', whatsapp: 'ManiSpa para Hombre $100' },
+      { name: 'Lunes y Martes de Consentirte', price: 'Desde $120', note: 'Especiales de vacaciones', whatsapp: 'Promos Lunes y Martes' },
     ]
   },
   {
@@ -74,6 +78,10 @@ const services = [
       'Alta frecuencia para desinfectar y regenerar',
       'Mascarilla personalizada y seleccionada según tu tipo de piel',
       'Duración aproximada de la sesión: 60 a 90 minutos'
+    ],
+    promos: [
+      { name: 'Microneedling Skin Revive', price: '$999', oldPrice: '$3,400', note: '4 sesiones · Bio-renovación total', whatsapp: 'Microneedling Skin Revive $999' },
+      { name: 'Dermapen + PDRN Salmón', price: '$999', oldPrice: '$1,500', note: 'Incluye limpieza profunda', whatsapp: 'Dermapen con PDRN de Salmón $999' },
     ]
   },
   {
@@ -129,6 +137,10 @@ const services = [
       'Se requiere valoración médica previa y personalizada',
       'Resultados naturales que realzan tus facciones',
       'Tiempo de recuperación mínimo para la mayoría de los tratamientos'
+    ],
+    promos: [
+      { name: 'Toxina Botulínica (Bótox)', price: '$4,500', oldPrice: '$8,500', note: 'Facial de regalo · Limpieza profunda', whatsapp: 'Toxina Botulínica $4,500' },
+      { name: 'Enzimas Lipolíticas Premium', price: '$6,500', oldPrice: '$12,000', note: '10 sesiones · Ambiente premium', whatsapp: 'Enzimas Lipolíticas Premium $6,500' },
     ]
   },
   {
@@ -233,7 +245,11 @@ for (let i = 0; i < services.length; i++) {
   }
   
   contentBlock += `</div>`;
-  
+
+  if (s.promos && s.promos.length > 0) {
+    contentBlock += buildPromoStrip(s.promos);
+  }
+
   if (s.benefits) {
     contentBlock += `
           <div class="bg-dark/50 rounded-xl p-6 border border-dark-border">
@@ -289,6 +305,47 @@ function buildPriceCard(p) {
             </div>`;
 }
 
-// Ensure the HTML title replacements work
+function calcSavings(oldStr, newStr) {
+  const a = parseInt(oldStr.replace(/[$,]/g, ''));
+  const b = parseInt(newStr.replace(/[$,]/g, ''));
+  if (isNaN(a) || isNaN(b) || a <= b) return null;
+  return '$' + (a - b).toLocaleString('en-US');
+}
+
+function buildPromoStrip(promos) {
+  let html = `
+          <div class="rounded-xl p-5 bg-gold/5 border border-gold/25 mb-8">
+            <h3 class="font-heading text-base font-bold text-gold mb-4 flex items-center gap-2">${icon('sparkles', 'inline-icon shrink-0')} Ofertas del mes</h3>
+            <div class="space-y-3">`;
+  for (const p of promos) {
+    const savings = p.oldPrice ? calcSavings(p.oldPrice, p.price) : null;
+    const note = p.note ? `<p class="text-warm-gray text-xs mt-0.5">${p.note}</p>` : '';
+    const savingsBadge = savings
+      ? `<span class="inline-block mt-1 text-xs text-emerald-400 font-semibold bg-emerald-400/10 px-2 py-0.5 rounded-full whitespace-nowrap">Ahorras ${savings}</span>`
+      : '';
+    html += `
+              <div class="flex items-center justify-between gap-3">
+                <div class="flex-1 min-w-0">
+                  <p class="text-warm-white text-sm font-medium leading-tight">${p.name}</p>
+                  ${note}
+                  ${savingsBadge}
+                </div>
+                <div class="flex items-center gap-3 shrink-0">
+                  <div class="text-right">
+                    ${p.oldPrice ? `<span class="price-old text-xs block">${p.oldPrice}</span>` : ''}
+                    <span class="price-tag">${p.price}</span>
+                  </div>
+                  <a href="https://wa.me/527771594874?text=Hola%20%F0%9F%91%8B%2C%20quiero%20agendar%20una%20cita%20en%20THE%20LOFT%20%26%20SPA%20PLY.%20Me%20interesa%3A%20${encodeURIComponent(p.whatsapp)}.%20%C2%BFQu%C3%A9%20horarios%20tienen%3F" target="_blank" class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center hover:bg-gold hover:text-dark transition-all shrink-0" aria-label="Agendar ${p.name}">
+                    ${icon('message-circle', 'w-4 h-4')}
+                  </a>
+                </div>
+              </div>`;
+  }
+  html += `
+            </div>
+          </div>`;
+  return html;
+}
+
 fs.writeFileSync(htmlPath, html);
 console.log('✅ Layout rewritten');

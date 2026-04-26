@@ -17,7 +17,13 @@
       "Bash(git rm *)",
       "Bash(node rewrite-layout.js)",
       "Bash(npx tailwindcss *)",
-      "Bash(grep -n \"price-old\\\\|price-tag\\\\|>\\\\$\\\\|> \\\\$\" \"C:/Users/victu/OneDrive/Desktop/spa/index.html\")"
+      "Bash(grep -n \"price-old\\\\|price-tag\\\\|>\\\\$\\\\|> \\\\$\" \"C:/Users/victu/OneDrive/Desktop/spa/index.html\")",
+      "Bash(git remote *)",
+      "Bash(git add *)",
+      "Bash(git restore *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(node rewrite-promos.js)"
     ]
   }
 }
